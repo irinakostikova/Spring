@@ -8,7 +8,7 @@ import laba1.service.Question;
 
 @Component
 public class CSVReaderImpl implements ICSVReader {
-   private String filePath="questions.csv";
+
 
     public List<Question> getQuestions() throws IOException {
 
