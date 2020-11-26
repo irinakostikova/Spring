@@ -2,11 +2,13 @@ package laba1.service;
 
 import laba1.csv.ICSVReader;
 import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Service;
+
 import java.io.IOException;
 import java.util.List;
 import java.util.Scanner;
 
-@Component
+@Service
 public class Test {
 
 

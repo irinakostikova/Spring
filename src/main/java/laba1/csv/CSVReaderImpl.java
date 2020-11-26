@@ -4,6 +4,8 @@ package laba1.csv;
 import com.opencsv.CSVReader;
 import laba1.service.Question;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.stereotype.Service;
+
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
@@ -11,9 +13,10 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-@Configuration
+@Service
 public class CSVReaderImpl implements ICSVReader {
 
+    @Override
     public List<Question> getQuestions() throws IOException {
 
         List<Question> result = new ArrayList<>();

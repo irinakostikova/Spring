@@ -7,5 +7,5 @@ import java.util.List;
 
 public interface ICSVReader {
 
-    public List<Question> getQuestions() throws IOException;
+    List<Question> getQuestions() throws IOException;
 }
