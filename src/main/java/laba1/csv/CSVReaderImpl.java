@@ -1,14 +1,18 @@
 package laba1.csv;
 
+
 import com.opencsv.CSVReader;
-import org.springframework.stereotype.Component;
-import java.io.*;
-import java.util.*;
 import laba1.service.Question;
+import org.springframework.context.annotation.Configuration;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
 
-@Component
+@Configuration
 public class CSVReaderImpl implements ICSVReader {
-
 
     public List<Question> getQuestions() throws IOException {
 
@@ -21,6 +25,7 @@ public class CSVReaderImpl implements ICSVReader {
             String[] answers = read.split(";");
             result.add(new Question(answers[1], answers[2], answers[3]));
         }
+
         return result;
     }
 }
