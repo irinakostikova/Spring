@@ -14,9 +14,9 @@ import java.util.Arrays;
 import java.util.List;
 
 @Service
+@Configuration
 public class CSVReaderImpl implements ICSVReader {
 
-    @Override
     public List<Question> getQuestions() throws IOException {
 
         List<Question> result = new ArrayList<>();

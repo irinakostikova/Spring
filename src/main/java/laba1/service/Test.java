@@ -1,6 +1,7 @@
 package laba1.service;
 
 import laba1.csv.ICSVReader;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Service;
 
@@ -11,13 +12,11 @@ import java.util.Scanner;
 @Service
 public class Test {
 
-
+    @Autowired
     private ICSVReader reader;
     private int count;
 
-    public Test(ICSVReader reader){
-        this.reader = reader;
-    }
+
 
     public void startTest() throws IOException {
         Scanner sc = new Scanner(System.in);
